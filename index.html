@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light only">
+    <title>Gravity Simulation</title>
+
+    <link rel="icon" type="image/x-icon" href="gravity-favicon.png">
+    <link rel="apple-touch-icon" href="gravity-favicon.png">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="points"></div>
+    <div id="square"></div>
+    <div id="ground"></div>
+    <div class="controls">
+        <button id="start">START</button>
+        <button id="stop">STOP</button>
+        <label>(a) Acceleration : <span id="accelerationValue"></span></label><input type="range" min=1 max=50
+            step="0.1" value=9.81 id="acceleration">
+        <label>(t) Interval duration : <span id="intervalDurationValue"></span></label><input type="range" min=100
+            max=1000 value=500 id="intervalDuration">
+        <label>Square size</label><input type="range" min=10 max=200 value=20 id="squareSize">
+        <label>Ground level</label><input type="range" min=0 max=200 value=50 id="groundLevel">
+        <label>(v) Velocity: <span id="velocityValue">0 m/s</span></label>
+        <label>(d) Distance: <span id="distanceValue">0 m</span></label>
+        <label>(t) Time Elapsed: <span id="timeElapsedValue">0 s</span></label>
+        <p>This program lets you simulate gravity using the acceleration formula: <br><strong>d = 1/2at^2</strong></p>
+        <p>Note that this simulation doesn't consider air resistance and adjustments to the size of the falling square and the ground level can visually impact the simulation results.</p>
+    </div>
+    <audio id="fallingSound" src="falling-sound.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

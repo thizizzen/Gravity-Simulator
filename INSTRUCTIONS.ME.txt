@@ -1,0 +1,11 @@
+1. Download the folder and extract.
+
+2. Locate the HTML File: Ensure that all your HTML, CSS, and JavaScript files are in the same directory.
+
+3. Open with a Web Browser: Right-click on the HTML file then from the context menu, choose "Open with" and select your preferred web browser (e.g., Chrome, Firefox, or Edge).
+
+4. Or Directly in Browser: Alternatively, you can simply double-click on the HTML file. Most systems are configured to open HTML files in the default web browser.
+
+5. View the Simulation: The web browser will open, and you should see the Gravity Simulation project.
+
+6. Interact with the Simulation: Use the provided buttons and controls to start, stop, and interact with the simulation.
